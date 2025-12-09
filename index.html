@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Really Sorry...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand:wght@400&family=Pangolin&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Opening Screen -->
+    <div class="screen opening-screen" id="openingScreen">
+        <div class="container">
+            <!-- Kitten GIF Container -->
+            <div class="kitten-container">
+                <img id="kittenImage" src="anyone GIF.gif" alt="Cute kitten" class="kitten-gif">
+            </div>
+
+            <!-- Sorry Text -->
+            <h1 class="sorry-text">I'm really sorry…</h1>
+
+            <!-- Envelope Section -->
+            <div class="envelope-section">
+                <!-- Curved Arrow Animation -->
+                <div class="arrow-container">
+                    <svg class="curved-arrow" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 50 10 Q 80 40, 70 70" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M 70 70 L 60 65 L 68 58" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="arrow-text">Open & Read</p>
+                </div>
+
+                <!-- Envelope -->
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Letter Screen -->
+    <div class="screen letter-screen hidden" id="letterScreen">
+        <div class="letter">
+            <div class="letter-content">
+                <p class="letter-text" id="letterText">
+                    ok i am sorry it was my miatake i should have asked you but yeah i didnt ask cause i thought you are too tired recently and its at the night times likke 6-8 at that time so i thought you would be busy or something still i dont wanna justify all this i will just say sorry and it was my mistake i accept and i am ready to do whatever punishment you give for me and not that you asked from now on i will ask you and all but still from nowon whatever i do i will first ask you for sure and for me even if you belive or not you are the firdt priority so that only for you to talk back i will do all this not for anyone else even if it is lori or lakshya or someone else i wont ask the way i ask sorry for you or do whatever you say as a punishmnet cause you are my first priority and a friend who i never want to lose so understand some sometimes even talk to me also madam please and i am sorry really
+                </p>
+            </div>
+
+            <!-- Tap Button -->
+            <button class="tap-button" id="tapButton">Tap Here…</button>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div class="modal hidden" id="modal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <!-- Scratch Card Container -->
+            <div class="scratch-card-container">
+                <div class="scratch-card">
+                    <!-- Hidden message under the scratch layer -->
+                    <div class="scratch-message">
+                        <p>You're important to me,and the top priority for me<br>understand it and talk to me sometime also i too have phone to talk.</p>
+                    </div>
+                    <!-- Canvas for scratching -->
+                    <canvas id="scratchCanvas" class="scratch-canvas"></canvas>
+                </div>
+                <p class="scratch-instruction">Scratch to reveal the message!</p>
+            </div>
+            <button class="modal-close" id="modalClose">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
